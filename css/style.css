@@ -1,0 +1,131 @@
+.reasons {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+    padding: 60px 0px;
+ }
+ .reasons h2 {
+   margin-bottom: 30px;
+ }
+ 
+ .reasons .content {
+   text-align: center;
+ }
+ 
+ .reasons .card__list {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 30px;
+ }
+ 
+ .reasons .card__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .reasons .card__item i{
+   color: var(--orange);
+   font-size: 80px;
+ }
+ 
+ .reasons .card__item b{
+   margin: 1rem 0rem;
+ }
+ .reasons .card__item p{
+   margin: 1rem 0rem;
+ }
+ .reasons .card__item a{
+   margin-top: 1rem;
+   text-decoration: none;
+   color: var(--orange);
+ }
+ 
+ @media screen and (max-width: 992px){
+   .reasons .card__list {
+     grid-template-columns: 1fr;
+     column-gap: 0px;
+     row-gap: 30px;
+   }
+ 
+   .reasons .card__item {
+     flex-direction: row;
+     align-items: flex-start;
+     text-align: left;
+   }
+   .reasons .card__item i {
+     margin-right: 30px;
+   }
+ }
+ 
+ @media screen and (max-width: 768px){
+   .reasons {
+     grid-template-columns: 1fr;
+     column-gap: 0px;
+     row-gap: 30px;
+  }
+  .reasons .card__item i {
+   font-size: 60px;
+ }
+ }
+ 
+ /* section 2 */
+ .offer {
+   padding: 60px 0px;
+ }
+ 
+ .offer .title {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-bottom: 60px;
+ }
+ 
+ .offer .title h2 {
+   max-width: 850px;
+ }
+ 
+ .offer .card__list {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   column-gap: 30px;
+ }
+ 
+ .offer .card__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .offer .card__item i {
+   font-size: 80px;
+   color: var(--orange);
+ }
+ 
+ .offer .card__item b {
+   margin-bottom: 10px;
+ }
+ 
+ @media screen and (max-width: 992px){
+   .offer .card__list {
+     grid-template-columns: repeat(2, 1fr);
+     row-gap: 30px;
+   }
+ }
+ 
+ @media screen and (max-width: 576px){
+   .offer .card__list {
+     grid-template-columns: 1fr 1fr;
+   }
+ 
+   .offer .card__item i {
+     font-size: 50px;
+     color: var(--orange);
+   }
+ 
+   .offer .card__item p{
+     max-width: 300px;
+   }
+ }
