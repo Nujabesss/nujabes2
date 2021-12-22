@@ -19,6 +19,7 @@
     height: 60px;
     position: fixed;
     width: 100%;
+    z-index: 9000;
    
     background-color:white;
 }
@@ -153,15 +154,18 @@
     margin-bottom: 20px;
     position: relative;
     color:orangered;
+  
 }
 
 .section-three__title:after {
-    content: '';
+   
+        content: '';
     position: absolute;
     border-bottom: 2px solid blue;
     width: 70px;
     bottom: -10px;
     left: calc(50% - 35px);
+    
 }
 
 .section-three__discription {
@@ -238,7 +242,7 @@
     font-size: 2.2rem;
     margin-top: 0;
     position: relative;
-
+    z-index: 9000;
     color:rgb(231, 133, 5);
 }
 
@@ -249,6 +253,7 @@
     width: 70px;
     bottom: -10px;
     left: calc(50% - 35px);
+    z-index: 7;
 }
 
 .section-four__discription {
@@ -269,7 +274,7 @@
 
 .section-five {
     min-height: 500px;
-    background-color:wheat;
+    background-color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,15 +282,54 @@
 }
 .section-five__title{
     font-size: 2.2rem;
-    margin-top: -300px;
+    margin-top: 10px;
     position: relative;
     color:orangered;
 }
+.section-five__title:after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid blue;
+    width: 70px;
+    bottom: -10px;
+    left: calc(50% - 35px);
+    z-index: 7;
+}
 .container3{
-    width: 75%;
-    border: 2px solid #ccc;
-    background-color: #eee;
+    min-width: 300px;
+    min-height: 50px;
+    border: 2px solid orange;
+    background-color:white;
     border-radius: 5px; 
     padding: 16px; 
-    margin: 16px auto;
+    margin: 16px auto; 
+    text-align: center;
+    
+}
+
+.container3 span {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  .global{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-evenly;
+  }
+  .list{
+      margin-left: 5px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+  }
+  .section-four__discription3{
+    max-width: 1000px;
+    font-size: 1rem;
+    text-align: center;
+    color:rgb(177, 168, 168)
+    
+}
+.text2{
+    margin-top: -15px;
 }
